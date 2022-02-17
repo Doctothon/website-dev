@@ -180,7 +180,6 @@ export HUGO_HOST=127.0.0.1
 export HUGO_PORT=4547
 export HUGO_BASE_URL=http://127.0.0.1:5445
 export HUGO_BASE_URL=http://${HUGO_HOST}:${HUGO_PORT}
-export HUGO_BLABLA="i'm the best at Gulp, man, iam a devops"
 
 gulp hugo
 gulp serve
@@ -203,7 +202,7 @@ export DEPLOYMENT_BASE_URL=https://${DEPLOYMENT_DOMAIN}
 
 git flow release start ${RELEASE_VERSION}
 
-npm i
+npm run preps:all
 
 if [ -d ./docs ]; then
   rm -fr ./docs
@@ -228,7 +227,6 @@ gulpBuild (){
   export HUGO_BASE_URL=http://127.0.0.1:5445
   export HUGO_BASE_URL=http://${HUGO_HOST}:${HUGO_PORT}
   export HUGO_BASE_URL=https://doctothon.com
-  export HUGO_BLABLA="i'm the best at Gulp, man, iam a devops"
 
   gulp hugo
   cp -fr ./public/* ./docs/
@@ -256,7 +254,7 @@ git flow release finish -s ${RELEASE_VERSION} && git push -u origin --all  && gi
 
 ```bash
 
-export DEPLOYMENT_DOMAIN=doctothon-$RAND.surge.sh
+export DEPLOYMENT_DOMAIN=doctothon-$RANDOM.surge.sh
 export DEPLOYMENT_BASE_URL=https://${DEPLOYMENT_DOMAIN}
 
 if [ -d ./docs ]; then
@@ -282,15 +280,23 @@ gulpBuild (){
   export HUGO_PORT=4547
   export HUGO_BASE_URL=http://127.0.0.1:5445
   export HUGO_BASE_URL=http://${HUGO_HOST}:${HUGO_PORT}
-  export HUGO_BLABLA="i'm the best at Gulp, man, iam a devops"
 
   gulp hugo
+  cp -fr ./public/* ./docs/
 }
 
-gulpBuild
+oldHugoBuild
 
 surge ./public "${DEPLOYMENT_DOMAIN}"
 
+echo "DEPLOYMENT_BASE_URL=[${DEPLOYMENT_BASE_URL}]"
+
+
+
+
+```
+
+```bash
 export DEPLOYMENT_DOMAIN=doctothon.surge.sh
 export DEPLOYMENT_BASE_URL=https://${DEPLOYMENT_DOMAIN}
 
@@ -319,7 +325,7 @@ surge ./public "${DEPLOYMENT_DOMAIN}"
 
 ```bash
 export HUGO_BASE_URL=https://127.0.0.1:5447
-export HUGO_BLABLA=https://127.0.0.1:5447
+export HUGO_PORT=5447
 gulp hugo
 
 ```

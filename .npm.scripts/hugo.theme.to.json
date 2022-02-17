@@ -1,27 +1,36 @@
 {
-    "name": "Whisper",
-    "license": "MIT",
-    "licenselink": "https://github.com/zerostatic/hugo-whisper-theme/blob/master/LICENSE",
-    "description": "Whisper is a minimal documentation theme built for Hugo. The design and functionality is intentionally minimal.",
-    "homepage": "https://github.com/zerostatic/hugo-whisper-theme",
-    "demosite": "https://hugo-whisper.netlify.app",
+    "name": "Tranquilpeak",
+    "license": "GNU General Public License v3.0",
+    "licenselink": "https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/LICENSE",
+    "description": "A gorgeous responsive theme for Hugo blog framework",
+    "homepage": "https://github.com/kakawait/hugo-tranquilpeak-theme",
     "tags": [
-        "docs",
-        "responsive",
+        "blog",
         "minimal",
-        "clean",
-        "bootstrap",
-        "zerostatic"
+        "responsive",
+        "personal",
+        "customizable",
+        "creative",
+        "fontawesome",
+        "highlight.js"
     ],
     "features": [
-        "docs",
-        "bootstrap",
-        "scss",
-        "netlify",
-        "google analytics"
+        "blog",
+        "themes",
+        "disqus",
+        "minimal",
+        "responsive",
+        "font awesome",
+        "highlight.js"
     ],
+    "min_version": 0.53,
     "author": {
-        "name": "Robert Austin",
-        "homepage": "https://www.zerostatic.io"
+        "name": "Thibaud Leprêtre",
+        "homepage": "https://github.com/kakawait"
+    },
+    "original": {
+        "name": "Tranquilpeak",
+        "homepage": "https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak",
+        "repo": "https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak.git"
     }
 }

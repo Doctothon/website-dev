@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "preps": "npm run preps:all",
-    "preps:all": "source ./.npm.scripts/dev/env.sh && ./.npm.scripts/dev/prepare.sh",
-    "preps:g": "source ./.npm.scripts/dev/env.sh && ./.npm.scripts/dev/prepare-g.sh",
-    "preps:dev": "source ./.npm.scripts/dev/env.sh && ./.npm.scripts/dev/prepare-dev.sh",
+    "preps:all": "chmod +x ./.npm.scripts/dev/prepare.sh && ./.npm.scripts/dev/prepare.sh",
+    "preps:g": "chmod +x ./.npm.scripts/dev/prepare-g.sh && ./.npm.scripts/dev/prepare-g.sh",
+    "preps:dev": "chmod +x ./.npm.scripts/dev/prepare-dev.sh && ./.npm.scripts/dev/prepare-dev.sh",
     "test:dev": "./.npm.scripts/dev/test.sh",
     "test:prod": "./.npm.scripts/prod/test.sh",
     "build:dev": "./.npm.scripts/dev/build.sh",
@@ -27,7 +27,7 @@
     "toml": "^3.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.2",
+    "@babel/core": "^7.17.5",
     "@babel/preset-env": "^7.16.11",
     "@babel/register": "^7.17.0",
     "browser-sync": "^2.27.7",
