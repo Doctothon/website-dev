@@ -2,18 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cover image on Doctothon</title>
-    <link>https://doctothon.surge.sh/tags/cover-image/</link>
+    <link>https://doctothon-4598.surge.sh/tags/cover-image/</link>
     <description>Recent content in cover image on Doctothon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 May 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://doctothon.surge.sh/tags/cover-image/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 May 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://doctothon-4598.surge.sh/tags/cover-image/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Cover image showcase</title>
-      <link>https://doctothon.surge.sh/2015/05/cover-image-showcase/</link>
+      <title>Tuto Pour les dev Doctothon</title>
+      <link>https://doctothon-4598.surge.sh/2015/05/tuto-pour-les-dev-doctothon/</link>
       <pubDate>Wed, 13 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://doctothon.surge.sh/2015/05/cover-image-showcase/</guid>
-      <description>&lt;p&gt;Tranquilpeak integrate a unique &amp;ldquo;cover image&amp;rdquo; feature. Open this post to see how this feature sublimate your article.&lt;/p&gt;</description>
+      <guid>https://doctothon-4598.surge.sh/2015/05/tuto-pour-les-dev-doctothon/</guid>
+      <description>&lt;h2 id=&#34;le-workflow-git&#34;&gt;Le workflow git&lt;/h2&gt;
+&lt;p&gt;Pour la collaboration de plusieurs ingénieurs de développement, des règles doivent etre convenues&lt;/p&gt;
+&lt;p&gt;Voyons, par lm&amp;rsquo;exemple.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Récupérez  le code localment, et commencez une nouvelle tâche :&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;export THATSME&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;whoami&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;
+git clone git@github.com:Doctothon/website-dev.git ./doctothon_&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;THATSME&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;
+
+cd ./doctothon_&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;THATSME&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;
+git flow init --defaults
+&lt;span style=&#34;color:#75715e&#34;&gt;# git checkout develop&lt;/span&gt;
+git flow feature start &lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;THATSME&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;-ma-tache-du-moment
+git push -u origin HEAD
+git add -A &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;mj&amp;#39;explique ici ce que j&amp;#39;ai fait comme modif dans le code&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; git push -u origin HEAD
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Tranquilpeak integrate a unique &amp;ldquo;cover image&amp;rdquo; feature. Open this post to see how this feature sublimate your article.&lt;/p&gt;</description>
     </item>
     
   </channel>
