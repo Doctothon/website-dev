@@ -11,13 +11,13 @@
         {{ end }}
       </div>
     {{ end }}
-    <ul class="sidebar-buttons">
+    <ul class="sidebar-buttons doctothon back smoke">
       {{ partial "menu.html" (dict "menu" .Site.Menus.main "root" $) }}
     </ul>
-    <ul class="sidebar-buttons">
+    <ul class="sidebar-buttons doctothon back light pink social">
       {{ partial "menu.html" (dict "menu" .Site.Menus.links "root" $) }}
     </ul>
-    <ul class="sidebar-buttons">
+    <ul class="sidebar-buttons doctothon back light pink social">
       {{ partial "menu.html" (dict "menu" .Site.Menus.misc "root" $) }}
     </ul>
   </div>
