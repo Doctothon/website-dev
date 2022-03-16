@@ -3,6 +3,7 @@
 /** side vertifcal menus ( see https://github.com/Doctothon/website-dev/issues/3 ) **/
 ul.doctothon.back.smoke {
   background: rgb(95 180 234 / 47%);
+  padding: 1rem!important;
 }
 
 /* doctothon back light pink social */
@@ -10,4 +11,5 @@ ul.doctothon.back.light.pink.social {
   /* background: rgb(234 95 182 / 36%); */
   /* background: rgb(60 112 49 / 40%); */
   background: rgb(95 180 234 / 47%);
+  padding: 1rem!important;
 }
