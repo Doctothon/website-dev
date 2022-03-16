@@ -141,6 +141,7 @@ git checkout ${DESIRED_VERSION}
 # npm run spawn
 # and then run :
 
+export PATH=$PATH:/usr/local/go/bin && go version
 export HUGO_HOST="127.0.0.1"
 export HUGO_PORT="4549"
 npm start
